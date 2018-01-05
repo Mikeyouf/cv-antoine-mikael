@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>CV Mikael ANTOINE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top bckCouleur">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#about">ACCUEIL</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Compétences</a>
+                    </li>
+                    <li>
+                        <a href="#experience">Expériences</a>
+                    </li>
+                    <li>
+                        <a href="#education">éducation</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#motivation">motivations</a>
+                    </li>
+                    <li>
+                        <a href="#monForm">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="container-fluid bckCouleur">
+        <div class="col-xs-8 col-md-4 profile-picture">
+            <img src="images/moi.JPG" alt="Mikael" class="img-circle">
+        </div>
+        <div class="heading">
+            <h1>Mikael Antoine</h1>
+            <h3>Développeur Front-End Junior Javascript</h3>
+            <a class="btn buttonNormal button1" id="button1" href="docs/CV-Mikael-Antoine.pdf" target="_blank">télécharger CV</a>
+        </div>
+    </section>
+    
+    <div class="container-fluid" id="imageAvatar">
+        <div>
+            <img src="images/monAvatarMoi.png" alt="moi" id="monAvatar">
+        </div>
+    </div>
+
+    <div id="glyphAvatar">
+        <span class="glyphicon glyphicon-arrow-right glyphAvatar2"></span>
+    </div>
+
+    <button name="Préférences" type="button" class="btn buttonNormal" id="showPref">Préférences</button>
+
+    <div id="preferences" class="container">
+        <h2 id="titrePref" class="couleur">Veuillez remplir le formulaire svp</h2>
+        <button id="validePref" type="submit" class="btn buttonNormal">Valider</button>
+        <div id="tabs">
+            <ul class="nav nav-pills">
+                <li class="active"><a data-toggle="tab" href="#tabs-1">Noms</a></li>
+                <li><a data-toggle="tab" href="#tabs-2">Couleurs</a></li>
+                <li><a data-toggle="tab" href="#tabs-3">Compétences</a></li>
+                <li><a data-toggle="tab" href="#tabs-4">Qualités</a></li>
+            </ul>
+            <div id="tabs-1">
+                <form id="pref1">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="prenomPref" class="input-lg couleur">Prénom</label>
+                            <input id="prenomPref" name="prenomPref" class="form-control input-lg" placeholder="Votre prénom" type="text" maxlength="30">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="entreprisePref" class="input-lg couleur">Entreprise</label>
+                            <input id="entreprisePref" name="entreprisePref" class="form-control input-lg" placeholder="Le nom de votre entreprise" type="text" maxlength="30">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="tabs-2">
+                <form id="pref2">
+                    <h4 class="couleur">Avez-vous une couleur préférée?</h4>
+                    <div class="row">
+                        <label class="radio-inline"><input type="radio" name="optradio" id="fBleu" checked="">BLEU</label>
+                        <label class="radio-inline"><input type="radio" name="optradio" id="fRouge">ROUGE</label>
+                        <label class="radio-inline"><input type="radio" name="optradio" id="fViolet">MAUVE</label>
+                        <label class="radio-inline"><input type="radio" name="optradio" id="fVert">VERT</label>
+                    </div>
+                </form>
+            </div>
+            <div id="tabs-3">
+                <form id="pref3">
+                    <h4 class="couleur">Quels sont les trois principales compétences que vous recherchez?</h4>
+                    <div class="row">
+                        <div class="form-group col-md-3">
+                            <label class="checkbox form2"><input type="checkbox" value="html/css" id="chx1">HTML/CSS</label>
+                            <label class="checkbox form2"><input type="checkbox" value="bootstrap" id="chx2">BOOTSTRAP</label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="checkbox form2"><input type="checkbox" value="wordpress" id="chx3">WORDPRESS</label>
+                            <label class="checkbox form2"><input type="checkbox" value="git" id="chx4">GIT</label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="checkbox form2"><input type="checkbox" value="javascript" id="chx5">JAVASCRIPT</label>
+                            <label class="checkbox form2"><input type="checkbox" value="jquery" id="chx6">JQUERY</label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="checkbox form2"><input type="checkbox" value="react" id="chx7">REACT</label>
+                            <label class="checkbox form2"><input type="checkbox" value="php/sql" id="chx8">PHP/SQL</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="tabs-4">
+                <form id="pref4">
+                    <h4 class="couleur">Quelles sont pour vous trois qualités importantes?</h4>
+                    <div class="row">
+                        <div class="form-group col-md-3">
+                            <label class="checkbox form4"><input type="checkbox" value="assidu" id="qual1">Assidu</label>
+                            <label class="checkbox form4"><input type="checkbox" value="creatif" id="qual2">Créatif</label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="checkbox form4"><input type="checkbox" value="applique" id="qual3">Appliqué</label>
+                            <label class="checkbox form4"><input type="checkbox" value="astucieux" id="qual4">Astucieux</label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="checkbox form4"><input type="checkbox" value="calme" id="qual5">Calme</label>
+                            <label class="checkbox form4"><input type="checkbox" value="determine" id="qual6">Déterminé</label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="checkbox form4"><input type="checkbox" value="dynamique" id="qual7">Dynamique</label>
+                            <label class="checkbox form4"><input type="checkbox" value="flexible" id="qual8">Flexible</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section id="skills">
+        <div class="blue-divider bckCouleur"></div>
+        <div class="heading">
+            <h2 class="couleur">Compétences</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="progress">
+                        <div class="progress-bar bckCouleur" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%" id="pb1">
+                            <h5>HTML/CSS</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bckCouleur" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%" id="pb2">
+                            <h5>BOOTSTRAP</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bckCouleur" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%" id="pb3">
+                            <h5>WORDPRESS</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bckCouleur" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%" id="pb4">
+                            <h5>GIT - GITHUB</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="progress">
+                        <div class="progress-bar bckCouleur" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%" id="pb5">
+                            <h5>JAVASCRIPT</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bckCouleur" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%" id="pb6">
+                            <h5>JQUERY</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bckCouleur" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%" id="pb7">
+                            <h5>REACT</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bckCouleur" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%" id="pb8">
+                            <h5>PHP - SQL</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="bckCouleur">
+        <div class="container">
+            <div class="white-divider"></div>
+            <div class="heading">
+                <h2>Expérience professionelle</h2>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-badge couleur"><span class="glyphicon glyphicon-briefcase"></span>
+                    </div>
+                    <div class="timeline-panel-container">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 id="prenomChoix">Peut-être chez vous!</h3>
+                                <h4 class="couleur" id="entrepriseChoix">Développeur Front-End Junior</h4>
+                                <p class="text-muted"><small class="glyphicon glyphicon-time"></small> 2018 - 20..</p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Développement de sites web responsives et dynamiques</p>
+                                <p>Développement d'interface utilisateur en JS</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge couleur"><span class="glyphicon glyphicon-briefcase"></span>
+                    </div>
+                    <div class="timeline-panel-container-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>Amikazur</h3>
+                                <h4 class="couleur">Auto entrepreneur</h4>
+                                <p class="text-muted"><small class="glyphicon glyphicon-time"></small> 2012 - 2018</p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Entretien des espaces verts</p>
+                                <p>Entretien chez le client, facturation, suivi client</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge couleur"><span class="glyphicon glyphicon-briefcase"></span>
+                    </div>
+                    <div class="timeline-panel-container">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>Ferme du Gapeau</h3>
+                                <h4 class="couleur">Educateur spécialisé</h4>
+                                <p class="text-muted"><small class="glyphicon glyphicon-time"></small> 2012 - 2018</p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Accompagnement et suivi des personnes</p>
+                                <p>Suivi de la qualité de service chez le client et formation des ouvriers</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <div class="blue-divider bckCouleur">
+            </div>
+            <div class="heading">
+                <h2 class="couleur">Diplômes</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6" data-toggle="collapse" data-target=".collapsePush0" id="test">
+                    <div class="education-block">
+                        <h5>Janvier 2018</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                    </div>
+                    <div class="education-block2 collapse in collapsePush0" id="collapse">
+                        <h4 id="enCours">EN COURS</h4>
+                        <h3 class="couleur">Udemy</h3>
+                        <h4>Certificat de réussite</h4>
+                        <div class="blue-divider bckCouleur"></div>
+                        <p>React JS et Redux pour débutants</p>
+                        <button type="button" class="btn buttonNormal" data-toggle="modal" data-target="#modalReact1" disabled>Voir</button>
+                    </div>
+                </div>
+                <div id="modalReact1" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">React JS</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="#">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn buttonNormal" data-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6" data-toggle="collapse" data-target=".collapsePush0" id="test">
+                    <div class="education-block">
+                        <h5>Janvier 2018</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                    </div>
+                    <div class="education-block2 collapse in collapsePush0" id="collapse">
+                        <h4 id="enCours">EN COURS</h4>
+                        <h3 class="couleur">OpenClassRooms</h3>
+                        <h4>Certificat de réussite</h4>
+                        <div class="blue-divider bckCouleur"></div>
+                        <p>Gérez votre code avec Git et GitHub </p>
+                        <button type="button" class="btn buttonNormal" data-toggle="modal" data-target="#modalGit" disabled>Voir</button>
+                    </div>
+                </div>
+                <div id="modalGit" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Git et GitHub</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="#">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn buttonNormal" data-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6" data-toggle="collapse" data-target=".collapsePush0" id="test">
+                    <div class="education-block">
+                        <h5>janvier 2018</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                    </div>
+                    <div class="education-block2 collapse in collapsePush0" id="collapse">
+                        <h4 id="enCours">EN COURS</h4>
+                        <h3 class="couleur">Udemy</h3>
+                        <h4>Certificat de réussite</h4>
+                        <div class="blue-divider bckCouleur"></div>
+                        <p>Maitrisez JQuery comme un pro</p>
+                        <button type="button" class="btn buttonNormal" data-toggle="modal" data-target="#modalJquery2" disabled>Voir</button>
+                    </div>
+                </div>
+                <div id="modalJquery2" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">JQuery</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="#">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn buttonNormal" data-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 col-sm-6" data-toggle="collapse" data-target=".collapsePush" id="test">
+                    <div class="education-block">
+                        <h5>Janvier 2018</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                    </div>
+                    <div class="education-block2 collapse in collapsePush" id="collapse">
+                        <h3 class="couleur">OpenClassRooms</h3>
+                        <h4>Certificat de réussite</h4>
+                        <div class="blue-divider bckCouleur"></div>
+                        <p>Mettre en place un système de veille informationnelle</p>
+                        <button type="button" class="btn buttonNormal" data-toggle="modal" data-target="#modalVeille">Voir</button>
+                    </div>
+                </div>
+                <div id="modalVeille" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Veille</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/certificat_mikael_antoine_systeme_de_veille.png">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn buttonNormal" data-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6" data-toggle="collapse" data-target=".collapsePush" id="test">
+                    <div class="education-block">
+                        <h5>Décembre 2017</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                    </div>
+                    <div class="education-block2 collapse in collapsePush" id="collapse">
+<!--                        <h4 id="enCours">EN COURS</h4>-->
+                        <h3 class="couleur">OpenClassRooms</h3>
+                        <h4>Certificat de réussite</h4>
+                        <div class="blue-divider bckCouleur"></div>
+                        <p>Simplifier votre code JS avec JQuery</p>
+                        <button type="button" class="btn buttonNormal" data-toggle="modal" data-target="#modalJquery">Voir</button>
+                    </div>
+                </div>
+                <div id="modalJquery" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">JQuery</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/certificat-coder-avec-jquery.png">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn buttonNormal" data-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6" data-toggle="collapse" data-target=".collapsePush" id="test">
+                    <div class="education-block">
+                        <h5>Septembre 2017</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                    </div>
+                    <div class="education-block2 collapse in collapsePush" id="collapse">
+                        <h3 class="couleur">Udemy</h3>
+                        <h4>Certificat de réussite</h4>
+                        <div class="blue-divider bckCouleur"></div>
+                        <p>Wordpress 4 de A à Z!</p>
+                        <button type="button" class="btn buttonNormal" data-toggle="modal" data-target="#modalWorpress">Voir</button>
+                    </div>
+                </div>
+                <div id="modalWorpress" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Wordpress</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/wordpress.jpg">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn buttonNormal" data-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 col-sm-6" data-toggle="collapse" data-target=".collapsePush2">
+                    <div class="education-block">
+                        <h5>Juillet 2017</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                    </div>
+                    <div class="education-block2 collapse collapsePush2" id="collapse">
+                        <h3 class="couleur">Udemy</h3>
+                        <h4>Certificat de réussite</h4>
+                        <div class="blue-divider bckCouleur"></div>
+                        <p>JavaScript le guide ultime ES6 et ES7</p>
+                        <button type="button" class="btn buttonNormal" data-toggle="modal" data-target="#modalJsEs6">Voir</button>
+                    </div>
+                    <div id="modalJsEs6" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">JavaScript ES6 et ES7</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/JS-ES6-ES7.jpg">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn buttonNormal" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6" data-toggle="collapse" data-target=".collapsePush2">
+                    <div class="education-block">
+                        <h5>Juin 2017</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                    </div>
+                    <div class="education-block2 collapse collapsePush2" id="collapse3">
+                        <h3 class="couleur">OpenClassRooms</h3>
+                        <h4>Certificat de réussite</h4>
+                        <div class="blue-divider bckCouleur"></div>
+                        <p>Apprenez à coder avec JavaScript</p>
+                        <button type="button" class="btn buttonNormal" data-toggle="modal" data-target="#modalJs">Voir</button>
+                    </div>
+                    <div id="modalJs" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">JavaScript</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/certificat-apprendre-js.png">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn buttonNormal" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-toggle="collapse" data-target=".collapsePush2">
+                    <div class="education-block">
+                        <h5>Juin 2017</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                    </div>
+                    <div class="education-block2 collapse collapsePush2" id="collapse4">
+                        <h3 class="couleur">Udemy</h3>
+                        <h4>Certificat de réussite</h4>
+                        <div class="blue-divider bckCouleur"></div>
+                        <p>Apprendre JavaScript, les fondamentaux</p>
+                        <button type="button" class="btn buttonNormal" data-toggle="modal" data-target="#modalJsFonda">Voir</button>
+                    </div>
+                    <div id="modalJsFonda" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">JavaScript</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/javascript-fondamentaux.jpg">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn buttonNormal" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6" data-toggle="collapse" data-target=".collapsePush3">
+                    <div class="education-block">
+                        <h5>Avril 2017</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                    </div>
+                    <div class="education-block2 collapse collapsePush3" id="collapse5">
+                        <h3 class="couleur">OpencClassRooms</h3>
+                        <h4>Certificat de réussite</h4>
+                        <div class="blue-divider bckCouleur"></div>
+                        <p>Comprendre le web</p>
+                        <button type="button" class="btn buttonNormal" data-toggle="modal" data-target="#modalCompWeb">Voir</button>
+                    </div>
+                    <div id="modalCompWeb" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Comprendre le web</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/certificat-comprendre-le-web.png">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn buttonNormal" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6" data-toggle="collapse" data-target=".collapsePush3">
+                    <div class="education-block">
+                        <h5>Avril 2017</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                    </div>
+                    <div class="education-block2 collapse collapsePush3" id="collapse6">
+                        <h3 class="couleur">OpencClassRooms</h3>
+                        <h4>Certificat de réussite</h4>
+                        <div class="blue-divider bckCouleur"></div>
+                        <p>Découvrez les solutions CMS</p>
+                        <button type="button" class="btn buttonNormal" data-toggle="modal" data-target="#modalSol">Voir</button>
+                    </div>
+                    <div id="modalSol" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Solutions CMS</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/certificat-solution-cms.png">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn buttonNormal" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-toggle="collapse" data-target=".collapsePush3">
+                    <div class="education-block">
+                        <h5>Mars 2017</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                    </div>
+                    <div class="education-block2 collapse collapsePush3" id="collapse7">
+                        <h3 class="couleur">OpencClassRooms</h3>
+                        <h4>Certificat de réussite</h4>
+                        <div class="blue-divider bckCouleur"></div>
+                        <p>Créer votre site avec HTML5 et CSS3</p>
+                        <button type="button" class="btn buttonNormal" data-toggle="modal" data-target="#modalHtml">Voir</button>
+                    </div>
+                    <div id="modalHtml" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">HTML5 et CSS3</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="images/certificat-thml-css.png">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn buttonNormal" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="bckCouleur">
+        <div class="container">
+            <div class="white-divider">
+            </div>
+            <div class="heading">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <a class="thumbnail" href="#" target="_blank"><img src="images/capture-cv-mik.png" alt="facebook share"></a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="thumbnail" href="https://www.asimo-peintre.fr" target="_blank"><img src="images/capture-asimo.png" alt="capture d'écran"></a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="thumbnail" href="https://et-ma-famille.000webhostapp.com" target="_blank"><img src="images/capture-etmafamille.png" alt="twitter video"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <a class="thumbnail" href="#" target="_blank"><img src="images/capture-etmafamille2.png" alt="youtube"></a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="thumbnail" href="#" target="_blank"><img src="images/prochainement1.png" alt="prochainement"></a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="thumbnail" href="#" target="_blank"><img src="images/prochainement1.png" alt="prochainement"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="motivation">
+        <div class="container">
+            <div class="blue-divider bckCouleur"></div>
+            <div class="heading">
+                <h2 class="couleur">Motivations</h2>
+            </div>
+            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+<!--
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4" class="slideQ" id="slide1"></li>
+                    <li data-target="#myCarousel" data-slide-to="5" class="slideQ" id="slide2"></li>
+                    <li data-target="#myCarousel" data-slide-to="6" class="slideQ" id="slide3"></li>
+                    <li data-target="#myCarousel" data-slide-to="7" class="slideQ" id="slide4"></li>
+                    <li data-target="#myCarousel" data-slide-to="8" class="slideQ" id="slide5"></li>
+                    <li data-target="#myCarousel" data-slide-to="9" class="slideQ" id="slide6"></li>
+                    <li data-target="#myCarousel" data-slide-to="10" class="slideQ" id="slide7"></li>
+                    <li data-target="#myCarousel" data-slide-to="11" class="slideQ" id="slide8"></li>
+                </ol>
+-->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h3 class="couleur">Curieux</h3>
+                        <h4>"J'aime regarder ce qu'il se passe un peu partout dans tous les domaines"</h4>
+                    </div>
+                    <div class="item">
+                        <h3 class="couleur">Ultra motivé!</h3>
+                        <h4>"Je me donne à 200% dans chaque nouveau projet!"</h4>
+                    </div>
+                    <div class="item">
+                        <h3 class="couleur">Précis</h3>
+                        <h4>"J'aime le travail bien fait, car chaque détail compte!"</h4>
+                    </div>
+                    <div class="item preferencesQ" id="qualite1" value="assidu">
+                        <h3 class="couleur">Assidu</h3>
+                        <h4>"Toujours présent, toujours partant!"</h4>
+                    </div>
+                    <div class="item preferencesQ" id="qualite2" value="creatif">
+                        <h3 class="couleur">Créatif</h3>
+                        <h4>"Je déborde d'imagination que je mets à profit dans mes projets"</h4>
+                    </div>
+                    <div class="item preferencesQ" id="qualite3" value="applique">
+                        <h3 class="couleur">Appliqué</h3>
+                        <h4>"J'aime le travail bien fait et je m'applique toujours!"</h4>
+                    </div>
+                    <div class="item preferencesQ" id="qualite4" value="astucieux">
+                        <h3 class="couleur">Astucieux</h3>
+                        <h4>"La fin justifie les moyens!"</h4>
+                    </div>
+                    <div class="item preferencesQ" id="qualite5" value="calme">
+                        <h3 class="couleur">Calme</h3>
+                        <h4>"Je suis posé, réfléchis, avec une bonne réaction face au stress"</h4>
+                    </div>
+                    <div class="item preferencesQ" id="qualite6" value="determine">
+                        <h3 class="couleur">Déterminé</h3>
+                        <h4>"Je vais jusqu'au bout de ce que j'entreprends!"</h4>
+                    </div>
+                    <div class="item preferencesQ" id="qualite7" value="dynamique">
+                        <h3 class="couleur">dynamique</h3>
+                        <h4>"Je suis en mouvement perpétuel"</h4>
+                    </div>
+                    <div class="item preferencesQ" id="qualite8" value="flexible">
+                        <h3 class="couleur">flexible</h3>
+                        <h4>"Je suis capable de m'adapter à différente situations"</h4>
+                    </div>
+                </div>
+                <a class="left carousel-control couleur" href="#myCarousel" data-slide="prev" role="button">
+                    <span class="glyphicon glyphicon-chevron-left couleur"></span>
+                </a>
+                <a class="right carousel-control couleur" href="#myCarousel" data-slide="next" role="button">
+                    <span class="glyphicon glyphicon-chevron-right couleur"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="monForm" class="bckCouleur">
+        <div class="container">
+            <div class="white-divider"></div>
+            <div class="heading">
+                <h2>Me contacter</h2>
+            </div>
+            <form method="post" action="form.php" id="contact">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="nom">Nom</label>
+                        <input id="nom" name="nom" class="form-control" placeholder="Votre nom" type="text" required="">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="prenom">Prenom</label>
+                        <input id="prenom" name="prenom" class="form-control" placeholder="Votre prénom" type="text" required="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="email">Adresse Email</label>
+                        <input id="email" name="email" class="form-control" placeholder="Votre Email" type="email" required="">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="phone">Téléphone</label>
+                        <input id="phone" name="phone" class="form-control" placeholder="Votre numéro de téléphone" type="phone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="objet">Titre</label>
+                    <input id="objet" name="objet" class="form-control" placeholder="Objet du message" type="text" required="">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" class="form-control" placeholder="Votre message" required=""></textarea>
+                </div>
+                <div class="form-group text-right">
+                    <button name="envoi" type="submit" class="btn btn-default ">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>ANTOINE Mikael</h4>
+                    <p>3846 Ch. des Borrels</p>
+                    <p>83400 Hyères</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="#about">
+                        <span class="glyphicon glyphicon-chevron-up couleur" id="toUp"></span>
+                    </a>
+                    <h5>© 2017 ANTOINE MIKAEL</h5>
+                </div>
+                <div class="col-md-4">
+                    <span class="glyphicon glyphicon-phone" id="phone"> 06.52.12.44.32</span><br>
+                    <a href="mailto:amikazur@gmail.com">
+                        <span class="glyphicon glyphicon-envelope" id="mail"> amikazur@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</body>
+
+</html>
