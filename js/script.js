@@ -34,7 +34,6 @@ $(function () {
     })
 
 
-
     $("#tabs").tabs();
 
     //empecher mon avatar d'apparaitre sur des écrans trop petits
@@ -44,6 +43,16 @@ $(function () {
         $("#imageAvatar").delay(3000).fadeIn(100);
         $("#divAvatar").delay(3000).fadeIn(100);
         $(".glyphAvatar2").delay(3000).fadeIn(100);
+    } else {
+        $("#showPref").hide(); //cacher le bouton de pref sur petits écrans
+        
+        //changer la place de l'expérience pro si écran trop petit
+        $("#expProXs").removeClass("timeline-panel-container-inverted");
+        $("#expProXs").addClass("timeline-panel-container");
+        
+        $(".timeline-panel-container").css("width", "90%");
+        $(".timeline li .timeline-badge").css("left", "90%");
+        $(".timeline :before").css("left", "90%");
     }
 
     $("section").click(function () {

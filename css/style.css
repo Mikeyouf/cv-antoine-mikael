@@ -1,3 +1,22 @@
+@media all and (max-device-width: 480px)
+    
+{
+    .timeline:before
+    {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 5px;
+        background: #333;
+        left: 90%;
+        margin-left: -2.5px;
+    }
+
+}
+
+
+
 /* GENERAL */
 body
 {
