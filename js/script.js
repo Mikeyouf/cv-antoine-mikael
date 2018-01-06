@@ -377,7 +377,7 @@ $(function () {
 
         //tout les reset du formulaire après validation
         $('#pref1')[0].reset();
-//        $('#pref3')[0].reset();
+        $('#pref3')[0].reset();
         $('#pref4')[0].reset();
     })
 
