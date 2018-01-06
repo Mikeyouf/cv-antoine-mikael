@@ -52,7 +52,7 @@ $(function () {
         
         $(".timeline-panel-container").css("width", "90%");
         $(".timeline li .timeline-badge").css("left", "90%");
-        $(".timeline :before").css("left", "90%");
+        $(".timeline").toggleClass("changed");
     }
 
     $("section").click(function () {
