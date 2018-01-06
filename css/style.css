@@ -1,21 +1,23 @@
 /* GENERAL */
-body
-{
+
+body {
     font-family: "lato", "sans-serif";
 }
 
-h1,h2,h3,h4,h5,h6
-{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: bold;
 }
 
-.couleurRouge
-{
+.couleurRouge {
     color: red;
 }
 
-.button1
-{
+.button1 {
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 20px;
@@ -24,141 +26,123 @@ h1,h2,h3,h4,h5,h6
     display: inline-block;
 }
 
-.buttonNormal
-{
+.buttonNormal {
     color: white!important;
     border: 1px solid white!important;
     transition: all 0.3s ease-in 0s;
 }
 
-.buttonBleu
-{
+.buttonBleu {
     background: white!important;
     color: dodgerblue!important;
     text-decoration: none;
 }
 
-.buttonRed
-{
+.buttonRed {
     background-color: white!important;
     color: red!important;
     text-decoration: none;
 }
 
-.buttonViolet
-{
+.buttonViolet {
     background-color: white!important;
     color: violet!important;
     text-decoration: none;
 }
 
-.buttonGreen
-{
+.buttonGreen {
     background-color: white!important;
     color: green!important;
     text-decoration: none;
 }
 
-img
-{
+img {
     max-width: 100%;
     height: auto;
 }
 
-section
-{
+section {
     padding: 45px 0px 80px 0px;
 }
 
-section .heading
-{
+section .heading {
     text-align: center;
     padding-bottom: 40px;
 }
 
-section .heading h2
-{
+section .heading h2 {
     text-transform: uppercase;
 }
 
-.blue-divider
-{
+.blue-divider {
     width: 100px;
     height: 2px;
     margin: 0 auto;
 }
 
-.white-divider
-{
+.white-divider {
     width: 100px;
     height: 2px;
     background: #fff;
     margin: 0 auto;
 }
 
+
 /* MENU */
-.navbar
-{
+
+.navbar {
     font-size: 12px;
     letter-spacing: 4px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.navbar .navbar-nav
-{
+.navbar .navbar-nav {
     display: inline-block;
     float: none;
     vertical-align: top;
 }
 
-.navbar .navbar-collapse
-{
+.navbar .navbar-collapse {
     text-align: center;
 }
 
-.lienBlanc
-{
+.lienBlanc {
     color: white !important;
 }
 
-.navbar-nav li.active a
-{
+.navbar-nav li.active a {
     color: dimgrey!important;
     background-color: white !important;
 }
 
-.navbar-default .navbar-toggle
-{
+.navbar-default .navbar-toggle {
     border-style: none;
 }
 
-.icon-bar
-{
+.icon-bar {
     background-color: white !important;
 }
 
+
 /* ABOUT */
 
-#imageAvatar
-{
+#imageAvatar {
     position: fixed;
-/*    top: 350px;*/
+    /*    top: 350px;*/
     bottom: 0;
     left: 140px;
     z-index: 90;
     display: none;
 }
 
-#monAvatar
-{
+#monAvatar {
     width: 300%;
     height: 300%;
     border-bottom: 3px solid black;
 }
 
-#divAvatar
-{
+#divAvatar {
     display: none;
     background: transparent;
     color: black;
@@ -173,8 +157,7 @@ section .heading h2
     text-align: justify;
 }
 
-#glyphAvatar .glyphicon
-{
+#glyphAvatar .glyphicon {
     display: none;
     position: fixed;
     top: 340px;
@@ -182,40 +165,40 @@ section .heading h2
     font-size: 6em;
     color: aliceblue;
     z-index: 95;
-    transform:rotate(340deg);
-    -ms-transform:rotate(340deg); /* Internet Explorer */
-    -moz-transform:rotate(340deg); /* Firefox */
-    -webkit-transform:rotate(340deg); /* Safari et Chrome */
-    -o-transform:rotate(340deg); /* Opera */
+    transform: rotate(340deg);
+    -ms-transform: rotate(340deg);
+    /* Internet Explorer */
+    -moz-transform: rotate(340deg);
+    /* Firefox */
+    -webkit-transform: rotate(340deg);
+    /* Safari et Chrome */
+    -o-transform: rotate(340deg);
+    /* Opera */
 }
 
-#about
-{
+#about {
     padding-top: 100px;
 }
 
-.profile-picture
-{
+.profile-picture {
     text-align: center;
     margin: 0 auto;
     float: none;
 }
 
-#about .heading h1
-{
+#about .heading h1 {
     color: white;
     text-transform: uppercase;
 }
 
-#about .heading h3
-{
+#about .heading h3 {
     color: black;
 }
 
+
 /* PREFERENCES */
 
-#preferences
-{
+#preferences {
     position: fixed;
     right: 60px;
     top: 150px;
@@ -227,59 +210,55 @@ section .heading h2
     display: none;
 }
 
-#preferences h4
-{
+#preferences h4 {
     font-weight: bold;
 }
 
-#titrePref
-{
+#titrePref {
     font-weight: bold;
 }
 
-#tabs
-{
+#tabs {
     background: transparent;
     margin-top: 40px;
     padding: 0 20px 20px 20px;
     border: none;
 }
 
-#tabs ul
-{
+#tabs ul {
     background: transparent;
     border: none;
 }
 
-#tabs li
-{
+#tabs li {
     font-size: 1.1em;
     font-family: "lato"!important;
     padding: 0 10px;
 }
 
-#tabs a
-{
+#tabs a {
     color: white;
     background: transparent;
 }
 
-#tabs li.active a
-{
+#tabs li.active a {
     color: black;
 }
 
-#showPref
-{
+#showPref {
     position: fixed;
     visibility: visible;
     right: -20px;
     top: 330px;
-    transform:rotate(90deg);
-    -ms-transform:rotate(90deg); /* Internet Explorer */
-    -moz-transform:rotate(90deg); /* Firefox */
-    -webkit-transform:rotate(90deg); /* Safari et Chrome */
-    -o-transform:rotate(90deg); /* Opera */
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    /* Internet Explorer */
+    -moz-transform: rotate(90deg);
+    /* Firefox */
+    -webkit-transform: rotate(90deg);
+    /* Safari et Chrome */
+    -o-transform: rotate(90deg);
+    /* Opera */
     border-radius: 5px;
     padding: 10px;
     font-size: 1.2em;
@@ -288,111 +267,101 @@ section .heading h2
     z-index: 150;
 }
 
-#pref
-{
+#pref {
     padding: 15px;
     border-radius: 10px;
 }
 
-#pref1 label
-{
+#pref1 label {
     font-weight: bold;
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
 
-#pref2 label
-{
+#pref2 label {
     font-size: 1.1em;
 }
 
-#pref h3
-{
+#pref h3 {
     margin-top: 100px;
 }
 
-#pref3 label
-{
+#pref3 label {
     font-weight: bold;
 }
 
-#pref4 label
-{
+#pref4 label {
     text-transform: uppercase;
 }
 
-#titrePref
-{
+#titrePref {
     font-weight: bold;
     text-align: center;
 }
 
-#pref .checkboxPref
-{
+#pref .checkboxPref {
     border: 1px solid dodgerblue;
     border-radius: 5px;
     padding: 10px;
 }
 
-#validePref
-{
+#validePref {
     padding: 5px 15px;
     position: relative;
     top: 70%;
     left: 0%;
 }
 
+
 /* SKILLS */
 
-#skills
-{
+#skills {
     background: #fff;
 }
 
-#skills .progress
-{
+#skills .progress {
     height: 100%;
     margin: 30px 20px;
 }
 
-#skills .progress h5
-{
+#skills .progress h5 {
     text-shadow: 1px 1px 1px black;
 }
 
+
 /* EXPERIENCE */
 
-#experience .heading h2
-{
+#experience .heading h2 {
     color: white;
 }
 
-#enCours
-{
+.enCours {
     color: red;
     font-weight: bold;
     position: absolute;
     top: 150px;
     left: 100px;
     font-size: 3em;
-    transform:rotate(340deg);
-    -ms-transform:rotate(340deg); /* Internet Explorer */
-    -moz-transform:rotate(340deg); /* Firefox */
-    -webkit-transform:rotate(340deg); /* Safari et Chrome */
-    -o-transform:rotate(340deg); /* Opera */
+    transform: rotate(340deg);
+    -ms-transform: rotate(340deg);
+    /* Internet Explorer */
+    -moz-transform: rotate(340deg);
+    /* Firefox */
+    -webkit-transform: rotate(340deg);
+    /* Safari et Chrome */
+    -o-transform: rotate(340deg);
+    /* Opera */
     border: 4px solid red;
     border-radius: 5px;
     padding: 5px;
 }
 
-.timeline
-{
+.timeline {
     padding: 30px 10px;
     position: relative;
 }
 
-.timeline:before
-{
+.timeline:before {
     top: 0;
     bottom: 0;
     position: absolute;
@@ -403,8 +372,7 @@ section .heading h2
     margin-left: -2.5px;
 }
 
-.timeline.changed:before
-{
+.timeline.changed:before {
     top: 0;
     bottom: 0;
     position: absolute;
@@ -415,25 +383,22 @@ section .heading h2
     margin-left: -10px;
 }
 
-.timeline > li
-{
+.timeline>li {
     margin-bottom: 20px;
     position: relative;
 }
 
-.timeline > li:after
-{
+.timeline>li:after {
     clear: both;
 }
 
-.timeline > li:before, .timeline > li:after
-{
+.timeline>li:before,
+.timeline>li:after {
     content: " ";
     display: table;
 }
 
-.timeline li .timeline-badge
-{
+.timeline li .timeline-badge {
     width: 50px;
     line-height: 50px;
     font-size: 20px;
@@ -446,20 +411,17 @@ section .heading h2
     border-radius: 50%;
 }
 
-.timeline-panel-container
-{
+.timeline-panel-container {
     width: 50%;
     float: left;
 }
 
-.timeline-panel-container-inverted
-{
+.timeline-panel-container-inverted {
     width: 50%;
     float: right;
 }
 
-.timeline-panel
-{
+.timeline-panel {
     width: 90%;
     float: right;
     margin-right: 40px;
@@ -471,14 +433,12 @@ section .heading h2
     background: #fff;
 }
 
-.timeline-panel-container-inverted .timeline-panel
-{
+.timeline-panel-container-inverted .timeline-panel {
     float: left;
     margin-left: 40px;
 }
 
-.timeline-panel:after
-{
+.timeline-panel:after {
     position: absolute;
     top: 27px;
     right: -14px;
@@ -490,55 +450,41 @@ section .heading h2
     content: " ";
 }
 
-ul
-{
-    list-style-type: none; 
+ul {
+    list-style-type: none;
 }
 
-.timeline-panel-container-inverted .timeline-panel:after
-{
+.timeline-panel-container-inverted .timeline-panel:after {
     border-left-width: 0px;
     border-right-width: 14px;
     left: -14px;
     right: auto;
 }
 
-.timeline-heading h3
-{
+.timeline-heading h3 {
     margin-top: 5px;
     font-size: 20px;
 }
 
+
 /* EDUCATION */
 
-#education
-{
+#education {
     background: white;
 }
 
-#education button
-{
+#education button {
     transition: all 0.3s ease-in 0s;
-    padding-left:30px;
+    padding-left: 30px;
     padding-right: 30px;
     border: none;
 }
 
-/*
-#education button:hover
-{
-    background: white;
-    color: dodgerblue;
-}
-*/
-
-#education button.close
-{
+#education button.close {
     background: transparent;
 }
 
-.education-block
-{
+.education-block {
     width: 90%;
     height: 100px;
     margin: 20px auto 0;
@@ -549,13 +495,11 @@ ul
     border: 2px solid #ccc;
 }
 
-.education-block:hover
-{
+.education-block:hover {
     cursor: pointer;
 }
 
-.education-block2
-{
+.education-block2 {
     width: 90%;
     height: 220px;
     margin: 0 auto 20px;
@@ -566,75 +510,67 @@ ul
     border: 2px solid #ccc;
 }
 
-.education-block h5
-{
+.education-block h5 {
     color: #888;
     font-size: 15px;
     margin-bottom: 15px;
 }
 
-.education-block .glyphicon
-{
+.education-block .glyphicon {
     font-size: 40px;
 }
 
-.education-block2 h4
-{
+.education-block2 h4 {
     margin-bottom: 20px;
 }
 
-.education-block2 p
-{
+.education-block2 p {
     font-weight: bold;
 }
 
-.education-block2 .blue-divider
-{
+.education-block2 .blue-divider {
     margin-bottom: 20px;
 }
 
+
 /* PORTFOLIO */
 
-#portfolio .heading h2
-{
+#portfolio .heading h2 {
     color: white;
 }
 
-#portfolio .thumbnail img
-{
+#portfolio .thumbnail img {
     width: 100%;
     height: 230px;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
 }
 
-#portfolio .thumbnail img:hover
-{
+#portfolio .thumbnail img:hover {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
 }
 
+
 /* motivations */
 
-ol
-{
+ol {
     list-style: none;
 }
 
-#motivation
-{
+#motivation {
     background: white;
 }
 
-.carousel-control.left, .carousel-control.right
-{
+.carousel-control.left,
+.carousel-control.right {
     background-image: none;
 }
 
-.carousel-indicators
-{
+.carousel-indicators {
     bottom: 0px;
 }
+
 
 /*
 .carousel-indicators li
@@ -643,79 +579,79 @@ ol
 }
 */
 
-.carousel-indicators li.active
-{
+.carousel-indicators li.active {
     background-color: dimgrey;
 }
 
-#myCarousel .item
-{
+#myCarousel .item {
     padding: 40px 30px;
 }
 
-#myCarousel .item h3
-{
+#myCarousel .item h3 {
     font-style: italic;
 }
 
+
 /* FORMULAIRE */
-#monForm .heading h2
-{
+
+#monForm .heading h2 {
     color: white;
 }
 
-#monForm label
-{
+#monForm label {
     color: white;
 }
+
 
 /* FOOTER */
 
-footer
-{
+footer {
     background: #333;
     padding: 20px 0 40px;
 }
 
-footer #toUp
-{
+footer #toUp {
     font-size: 25px;
     margin: 20px;
     height: 30px;
 }
 
-footer #toUp:hover
-{
+footer #toUp:hover {
     font-size: 27px;
 }
 
-footer h5
-{
+footer h5 {
     color: white;
     font-weight: normal;
 }
 
-footer h4
-{
+footer h4 {
     color: white;
     font-weight: normal;
 }
 
-footer p
-{
+footer p {
     color: white;
 }
 
-footer h4
-{
+footer h4 {
     margin: 20px;
 }
 
-footer #phone, #mail
-{
-    font-size: 22px;
-    margin-top: 20px;
+footer #phone,
+#mail {
+    font-size: 18px;
+    margin-top: 15px;
     color: white;
     height: 30px;
 }
 
+footer #mail {
+    margin-bottom: 10px;
+}
+
+#logoLinkedin {
+    width: 18%;
+    height: 20%;
+    margin-top: 0px;
+}

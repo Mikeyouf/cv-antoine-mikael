@@ -10,7 +10,7 @@ function blink() {
 $(function () {
 
     //animation de defilement
-    $(".navbar a, footer a").on("click", function (event) {
+    $(".navbar a, .toUp").on("click", function (event) {
 
         event.preventDefault();
         var hash = this.hash;
@@ -53,6 +53,9 @@ $(function () {
         $(".timeline-panel-container").css("width", "90%");
         $(".timeline li .timeline-badge").css("left", "90%");
         $(".timeline").toggleClass("changed");
+        
+        //fermer les certificats si ecran trop petit
+        $(".education-block2").removeClass("in");
     }
 
     $("section").click(function () {
@@ -329,12 +332,7 @@ $(function () {
 
         //formulaire de choix
         //checkbox compétences
-//        if($('.form2:checked')) {
-//            
-//        }
-//        if ($('.progress-bar').hasClass('progress-bar-striped active')) {
-//            $('.progress-bar').removeClass('progress-bar-striped active');
-//        }
+
         if ($('input[id="chx1"]:checked').val()) {
             $('#pb1').addClass('progress-bar-striped active');
         } else {
