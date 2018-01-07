@@ -775,7 +775,7 @@
             <div class="heading">
                 <h2>Me contacter</h2>
             </div>
-            <form name="contact" netlify id="contact">
+            <form name="contact" netlify id="contact" netlify-honeypot="bot-field" action="messageForm.html">
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label for="nom">Nom</label>
@@ -807,6 +807,9 @@
                 <div class="form-group text-right">
                     <button name="envoi" type="submit" class="btn btn-default ">Envoyer</button>
                 </div>
+                <p class="hidden">
+                    <label>Don’t fill this out: <input name="bot-field"></label>
+                </p>
             </form>
         </div>
     </section>

@@ -655,3 +655,31 @@ footer #mail {
     height: 20%;
     margin-top: 0px;
 }
+
+
+/* DEUXIEME PAGE */
+
+#reponseOk {
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+#reponseOk img {
+    border-bottom: 2px solid black;
+}
+
+#reponseOk a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 35px;
+}
+
+#reponseOk p {
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+

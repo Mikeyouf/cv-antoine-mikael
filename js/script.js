@@ -43,6 +43,9 @@ $(function () {
         $("#imageAvatar").delay(3000).fadeIn(100);
         $("#divAvatar").delay(3000).fadeIn(100);
         $(".glyphAvatar2").delay(3000).fadeIn(100);
+        
+        //cacher le message de reponse formulaire et garder l'avatar
+        $("#paraHide").hide();
     } else {
         $("#showPref").hide(); //cacher le bouton de pref sur petits écrans
         
@@ -56,6 +59,9 @@ $(function () {
         
         //fermer les certificats si ecran trop petit
         $(".education-block2").removeClass("in");
+        
+        //cacher avatar de reponse formulaire
+        $("#avatarRep").hide();
     }
 
     $("section").click(function () {
@@ -380,5 +386,8 @@ $(function () {
         $('#pref3')[0].reset();
         $('#pref4')[0].reset();
     })
+    
+    //cacher l'input du form pour les bots
+    $('.hidden').hide();
 
 })
