@@ -372,6 +372,7 @@ section .heading h2 {
     margin-left: -2.5px;
 }
 
+/*
 .timeline.changed:before {
     top: 0;
     bottom: 0;
@@ -382,6 +383,7 @@ section .heading h2 {
     left: 90%;
     margin-left: -10px;
 }
+*/
 
 .timeline>li {
     margin-bottom: 20px;
@@ -683,3 +685,60 @@ footer #mail {
     font-size: 1.4em;
 }
 
+#paraHide {
+        display: none;
+    }
+
+
+/*MEDIA QUERIES */
+@media(max-width:767px){
+    /* bouton de préférence */
+    #showPref {
+        display: none;
+    }
+    
+    .timeline-panel-container-inverted {
+        width: 90%;
+        float: left;
+    }
+    
+    .timeline-panel-container {
+        width: 90%;
+    }
+    
+    .timeline li .timeline-badge {
+        left: 90%;
+    }
+    
+    .timeline:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 5px;
+        background: #333;
+        left: 90%;
+        margin-left: -10px;
+    }
+    
+    .timeline-panel-container-inverted .timeline-panel {
+        float: right;
+        margin-right: 40px;
+    }
+    
+    .timeline-panel-container-inverted .timeline-panel:after {
+        left: 100%;
+        border-top: 14px solid transparent;
+        border-left: 14px solid white;
+        border-right: 0 solid white;
+        border-bottom: 14px solid transparent;
+    }
+    
+    #avatarRep {
+        display: none;
+    }
+    
+    #paraHide {
+        display: block;
+    }
+}
