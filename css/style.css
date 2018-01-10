@@ -127,55 +127,6 @@ section .heading h2 {
 
 /* ABOUT */
 
-#imageAvatar {
-    position: fixed;
-    /*    top: 350px;*/
-    bottom: 0;
-    left: 140px;
-    z-index: 90;
-    display: none;
-}
-
-#monAvatar {
-    width: 300%;
-    height: 300%;
-    border-bottom: 3px solid black;
-}
-
-#divAvatar {
-    display: none;
-    background: transparent;
-    color: black;
-    font-weight: bold;
-    font-size: 1.2em;
-    position: fixed;
-    top: 420px;
-    left: 200px;
-    border-radius: 20px;
-    padding: 15px;
-    z-index: 95;
-    text-align: justify;
-}
-
-#glyphAvatar .glyphicon {
-    display: none;
-    position: fixed;
-    top: 340px;
-    right: 70px;
-    font-size: 6em;
-    color: aliceblue;
-    z-index: 95;
-    transform: rotate(340deg);
-    -ms-transform: rotate(340deg);
-    /* Internet Explorer */
-    -moz-transform: rotate(340deg);
-    /* Firefox */
-    -webkit-transform: rotate(340deg);
-    /* Safari et Chrome */
-    -o-transform: rotate(340deg);
-    /* Opera */
-}
-
 #about {
     padding-top: 100px;
 }
@@ -372,19 +323,6 @@ section .heading h2 {
     margin-left: -2.5px;
 }
 
-/*
-.timeline.changed:before {
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    content: " ";
-    width: 5px;
-    background: #333;
-    left: 90%;
-    margin-left: -10px;
-}
-*/
-
 .timeline>li {
     margin-bottom: 20px;
     position: relative;
@@ -467,7 +405,6 @@ ul {
     margin-top: 5px;
     font-size: 20px;
 }
-
 
 /* EDUCATION */
 
@@ -571,14 +508,6 @@ ol {
 .carousel-indicators {
     bottom: 0px;
 }
-
-
-/*
-.carousel-indicators li
-{
-    border-color: dodgerblue;
-}
-*/
 
 .carousel-indicators li.active {
     background-color: dimgrey;
@@ -739,5 +668,10 @@ footer #mail {
     
     #paraHide {
         display: block;
+    }
+    
+    #portfolio .thumbnail img {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
     }
 }
