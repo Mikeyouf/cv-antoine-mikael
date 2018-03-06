@@ -35,7 +35,7 @@ header p,
 
 header {
   height: 28.125em;
-  background-image: url("../img/header@0,25x.jpg");
+  background-image: url("../images/header@0,25x.jpg");
 }
 
 header a {
@@ -87,7 +87,7 @@ header a {
 /* NEWSLETTER */
 .newsletter {
   height: 31.25em;
-  background-image: url("../img/newsletter@0,25x.jpg");
+  background-image: url("../images/newsletter@0,25x.jpg");
 }
 
 .newsletter input {
@@ -175,13 +175,13 @@ footer a {
   /* HEADER */
 
   header {
-    background-image: url("../img/header@0,4x.jpg");
+    background-image: url("../images/header@0,4x.jpg");
   }
 
   /* NEWSLETTER */
 
   .newsletter {
-    background-image: url("../img/newsletter@0,4x.jpg");
+    background-image: url("../images/newsletter@0,4x.jpg");
   }
 
   .newsletter input {
@@ -225,7 +225,7 @@ footer a {
   /* HEADER */
 
   header {
-    background-image: url("../img/header.jpg");
+    background-image: url("../images/header.jpg");
   }
 
   /* NEWSLETTER */
@@ -235,6 +235,6 @@ footer a {
   }
 
   .newsletter {
-    background-image: url("../img/newsletter.jpg");
+    background-image: url("../images/newsletter.jpg");
   }
 }
